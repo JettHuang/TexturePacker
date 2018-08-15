@@ -19,6 +19,8 @@ enum EPixelFormat
 class FImageIO
 {
 public:
+	static uint32_t BytesPerPixel(int32_t InFormat);
+
 	// \brief
 	//  NOTE: use delete[] to free the OutBytes memeory.
 	static bool ReadImage(const char* InFilename, uint8_t *&OutBytes, uint32_t &OutWidth, uint32_t &OutHeight, int32_t &OutFormat);

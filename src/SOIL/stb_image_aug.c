@@ -3656,10 +3656,10 @@ static int outfile(char const *filename, int rgb_dir, int vdir, int x, int y, in
 int stbi_write_bmp(char const *filename, int x, int y, int comp, void *data)
 {
    int pad = (-x*3) & 3;
-   return outfile(filename,-1,-1,x,y,comp,data,0,pad,
+   return outfile(filename,-1,-1,x,y,comp,data,1,pad,
            "11 4 22 4" "4 44 22 444444",
            'B', 'M', 14+40+(x*3+pad)*y, 0,0, 14+40,  // file header
-            40, x,y, 1,24, 0,0,0,0,0,0);             // bitmap header
+            40, x,y, 1,32, 0,0,0,0,0,0);             // bitmap header
 }
 
 int stbi_write_tga(char const *filename, int x, int y, int comp, void *data)

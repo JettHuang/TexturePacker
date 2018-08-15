@@ -10,6 +10,22 @@
 #include "ImageIO.h"
 
 
+uint32_t FImageIO::BytesPerPixel(int32_t InFormat)
+{
+	uint32_t BytesCount = 0;
+	switch (InFormat)
+	{
+	case PIXEL_RGB:
+		BytesCount = 3; break;
+	case PIXEL_RGBA:
+		BytesCount = 4; break;
+	default:
+		BytesCount = 0; break;
+	}
+
+	return BytesCount;
+}
+
 bool FImageIO::ReadImage(const char *InFilename, uint8_t *&OutBytes, uint32_t &OutWidth, uint32_t &OutHeight, int32_t &OutFormat)
 {
 	OutBytes = NULL;
