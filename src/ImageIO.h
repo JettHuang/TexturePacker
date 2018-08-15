@@ -19,6 +19,8 @@ enum EPixelFormat
 class FImageIO
 {
 public:
+	// \brief
+	//  NOTE: use delete[] to free the OutBytes memeory.
 	static bool ReadImage(const char* InFilename, uint8_t *&OutBytes, uint32_t &OutWidth, uint32_t &OutHeight, int32_t &OutFormat);
 	static bool WriteImage(const char* InFilename, const uint8_t *InBytes, uint32_t InWidth, uint32_t InHeight, int32_t InFormat);
 };

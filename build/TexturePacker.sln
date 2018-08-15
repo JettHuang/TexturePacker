@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TexturePacker", "TexturePacker\TexturePacker.vcxproj", "{70C83815-DB43-4A48-BA10-8506D7040116}"
+	ProjectSection(ProjectDependencies) = postProject
+		{36BE0597-F2BE-45C9-ADE2-B6DCB8621640} = {36BE0597-F2BE-45C9-ADE2-B6DCB8621640}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SOIL", "SOIL\SOIL.vcxproj", "{36BE0597-F2BE-45C9-ADE2-B6DCB8621640}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +26,14 @@ Global
 		{70C83815-DB43-4A48-BA10-8506D7040116}.Release|x64.Build.0 = Release|x64
 		{70C83815-DB43-4A48-BA10-8506D7040116}.Release|x86.ActiveCfg = Release|Win32
 		{70C83815-DB43-4A48-BA10-8506D7040116}.Release|x86.Build.0 = Release|Win32
+		{36BE0597-F2BE-45C9-ADE2-B6DCB8621640}.Debug|x64.ActiveCfg = Debug|x64
+		{36BE0597-F2BE-45C9-ADE2-B6DCB8621640}.Debug|x64.Build.0 = Debug|x64
+		{36BE0597-F2BE-45C9-ADE2-B6DCB8621640}.Debug|x86.ActiveCfg = Debug|Win32
+		{36BE0597-F2BE-45C9-ADE2-B6DCB8621640}.Debug|x86.Build.0 = Debug|Win32
+		{36BE0597-F2BE-45C9-ADE2-B6DCB8621640}.Release|x64.ActiveCfg = Release|x64
+		{36BE0597-F2BE-45C9-ADE2-B6DCB8621640}.Release|x64.Build.0 = Release|x64
+		{36BE0597-F2BE-45C9-ADE2-B6DCB8621640}.Release|x86.ActiveCfg = Release|Win32
+		{36BE0597-F2BE-45C9-ADE2-B6DCB8621640}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

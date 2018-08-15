@@ -11,9 +11,9 @@ int main(int argc, char *argv[])
 	uint32_t width, height;
 	int32_t format;
 
-	if (FImageIO::ReadImage("toucan.png", pixels, width, height, format))
+	if (FImageIO::ReadImage("img_test_copy.bmp", pixels, width, height, format))
 	{
-		FImageIO::WriteImage("toucan_copy.png", pixels, width, height, format);
+		FImageIO::WriteImage("img_test_copy2.bmp", pixels, width, height, format);
 	}
 
 	delete[] pixels;
