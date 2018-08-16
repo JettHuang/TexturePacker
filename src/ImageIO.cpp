@@ -85,7 +85,7 @@ bool FImageIO::WriteImage(const char *InFilename, const uint8_t *InBytes, uint32
 	}
 
 	// check saved type
-	int image_type = SOIL_SAVE_TYPE_TGA;
+	int image_type = SOIL_SAVE_TYPE_PNG;
 	{
 		size_t len = strlen(InFilename);
 		if (len > 4)
@@ -98,6 +98,10 @@ bool FImageIO::WriteImage(const char *InFilename, const uint8_t *InBytes, uint32
 			else if (!_stricmp(postfix, ".dds"))
 			{
 				image_type = SOIL_SAVE_TYPE_DDS;
+			}
+			else if (!_stricmp(postfix, ".tag"))
+			{
+				image_type = SOIL_SAVE_TYPE_TGA;
 			}
 		}
 	}

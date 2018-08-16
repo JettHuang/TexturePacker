@@ -1473,6 +1473,8 @@ unsigned char*
 	return result;
 }
 
+extern int save_image_as_PNG(const char *filename, int width, int height, int channels, const unsigned char *const data);
+
 int
 	SOIL_save_image
 	(
@@ -1506,6 +1508,11 @@ int
 	{
 		save_result = save_image_as_DDS( filename,
 				width, height, channels, (const unsigned char *const)data );
+	} else 
+	if (image_type == SOIL_SAVE_TYPE_PNG)
+	{
+		save_result = save_image_as_PNG(filename,
+			width, height, channels, (const unsigned char *const)data);
 	} else
 	{
 		save_result = 0;

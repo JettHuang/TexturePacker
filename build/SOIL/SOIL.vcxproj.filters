@@ -46,5 +46,13 @@
     <ClCompile Include="..\..\src\SOIL\stb_image_aug.c">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\SOIL\image_png.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\SOIL\svpng.inc">
+      <Filter>include</Filter>
+    </None>
   </ItemGroup>
 </Project>

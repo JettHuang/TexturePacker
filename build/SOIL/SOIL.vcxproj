@@ -146,8 +146,12 @@
   <ItemGroup>
     <ClCompile Include="..\..\src\SOIL\image_DXT.c" />
     <ClCompile Include="..\..\src\SOIL\image_helper.c" />
+    <ClCompile Include="..\..\src\SOIL\image_png.c" />
     <ClCompile Include="..\..\src\SOIL\SOIL.c" />
     <ClCompile Include="..\..\src\SOIL\stb_image_aug.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\SOIL\svpng.inc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

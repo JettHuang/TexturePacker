@@ -30,11 +30,10 @@ int main(int argc, char *argv[])
 		"CloseNormal.png",
 		"CloseSelected.png",
 		"CocosCreator.png",
-		"HelloWorld.png",
 		"PurpleMonster.png"
 	};
 
-	FImagePacker::PackImages(ImageFiles, sizeof(ImageFiles) / sizeof(ImageFiles[0]), 512, 512, 1, 1, "MergedResult.bmp");
+	FImagePacker::PackImages(ImageFiles, sizeof(ImageFiles) / sizeof(ImageFiles[0]), 512, 512, 1, 1, "MergedResult.png");
 #endif
 
 	return 0;
